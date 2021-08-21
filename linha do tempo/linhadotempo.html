@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Designbolts-Seo-Time-Management.ico" type="image/x-icon">
+    <title>Linha do tempo</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            border: 2px solid white;
+            margin-right: 400px;
+            margin-left: 400px;
+            border-radius: 20px;
+            background: #6495ED;
+            color: white;
+        }
+        .timeline{
+            position: relative;
+            margin: 50px auto;
+            padding: 0;
+            width: 1000px;
+        }
+        .timeline::before{
+            content:'';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: #c5c5c5;
+        }
+        .timeline ul{
+            margin: 0;
+            padding: 0;
+        }
+        .timeline ul li{
+            list-style: none;
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+        }
+        .timeline ul li:nth-child(odd){
+            float: left;
+            text-align: right;
+            clear: both;
+            width: 44%;
+        }
+        .timeline ul li:nth-child(even){
+            float: right;
+            text-align: left;
+            clear: both;
+            width: 44%;
+        }
+        .container{
+            padding-bottom: 20px;
+        }
+        .timeline ul li:nth-child(odd)::before{
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: 14px;
+            width: 10px;
+            height: 10px;
+            background: #0000FF;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #6495ED;
+        }
+        .timeline ul li:nth-child(even)::before{
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 16px;
+            width: 10px;
+            height: 10px;
+            background: #0000FF;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #6495ED;
+        }
+        .timeline ul li h3{
+            margin: 0;
+            padding: 0;
+            padding-bottom: 15px;
+            font-weight: 600;
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha infância</h1>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="container">
+                    <h3>2005</h3>
+                    <img src="imagens/Jimmy-Neutron-Boy-Genius.jpg" alt="jimmyneutron" width="150px" height="300px">
+                    <img src="imagens/justicelegue.jpg" alt="justicelegue" width="150px" height="300px">
+                    <img src="imagens/scoobydoo.jpg" alt="scooby" width="150px" height="300px">
+                    <img src="imagens/JOVENSTITÃSEMAÇÃO.jpg" alt="jovens" width="150px" height="300px">
+                </div>
+            </li>
+            <li>
+                <div class="container02">
+                    <h3>2008</h3>
+                    <img src="imagens/spiderman.jpg" alt="homemaranha" width="150px" height="300px">
+                    <img src="imagens/ben10.jpg" alt="sueronze" width="150px" height="300px">
+                    <img src="imagens/superchoque.jpg" alt="superchoque" width="150px" height="300px">
+                    <img src="imagens/mundo.png" alt="mundo" width="150px" height="300px">
+                </div>
+            </li>
+            <li>
+                <div class="container03">
+                    <h3>2011</h3>
+                    <img src="imagens/chaves02.jpg" alt="chaves" width="150px" height="300px">
+                    <img src="imagens/horadeventura.jpg" alt="hora" width="150px" height="300px">
+                    <img src="imagens/regularshow.jpg" alt="apenas" width="150px" height="300px">
+                    <img src="imagens/drama.jfif" alt="drama" width="150px" height="300px">
+                    
+                </div>
+            </li>
+            <li>
+                <div class="container04">
+                    <h3>2014</h3>
+                    <img src="imagens/madagas.jpg" alt="madagascar" width="150px" height="300px">
+                    <img src="imagens/comotreina.jpg" alt="dragao" width="150px" height="300px">
+                    <img src="imagens/rio2.jpg" alt="rio" width="150px" height="300px">
+                    <img src="imagens/How_to_Train_Your_Dragon_2_poster.jpg" alt="comotreinar" width="150px" height="300px">
+                </div>
+            </li>
+            <li>
+                <div class="container03">
+                    <h3>2017</h3>
+                    <img src="imagens/Stranger_Things_Temporada_1_Poster.jpg" alt="stranger" width="150px" height="300px">
+                    <img src="imagens/spidermen01.jpg" alt="spidermen" width="150px" height="300px">
+                    <img src="imagens/guerracivil02.jpg" alt="guerra" width="150px" height="300px">
+                    <img src="imagens/Enola_Holmes_poster.jpeg" alt="enola" width="150px" height="300px">
+                </div>
+            </li>
+            <li>
+                <div class="container04">
+                    <h3>2021</h3>
+                    <img src="imagens/ultimato.jfif" alt="ultimato" width="150px" height="300px">
+                    <img src="imagens/unnamed.jpg" alt="marvel" width="150px" height="300px">
+                    <img src="imagens/1055866470-loki-poster-oficial-1.jpg" alt="loki" width="150px" height="300px">
+                    <img src="imagens/viuva.webp" alt="viuva" width="150px" height="300px">
+                </div>
+            </li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+</body>
+</html>
