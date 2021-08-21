@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+body{
+    margin: 20px;
+    
+}
+.container{
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item1{
+    padding: 50px;
+    background: green;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.item2{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+.item3{
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+.item4{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+.item5{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    background: orange;
+    text-align: center;
+    padding: 50px;
+}
