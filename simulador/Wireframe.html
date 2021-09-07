@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wireframe</title>
+</head>
+<body>
+    <header>
+            <h1>MoveTec</h1>
+    </header>
+    <main>
+        <div class="principal">
+            <h2>Simulador</h2>
+            <table class="tabela">
+                <tr>
+                    <th>Nome: </th>
+                    <td>
+                        <input type="text" name="nome" class="nome" id="nome" placeholder="Digite seu nome">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mensalidade: </th>
+                    <td>
+                        <input type="number" name="mensalidade" class="mensal" id="mensalidade" placeholder="Digite a mensalidade">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Tempo:</th>
+                    <td>
+                        <select name="tempo" id="tempo" class="time">
+                            <option value="1 ano">1 ano</option>
+                            <option value="2 anos">2 anos</option>
+                            <option value="3 anos">3 anos</option>
+                            <option value="4 anos">4 anos</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <td>
+                            <input type="button" value="Simular" class="botao" onclick="simular()">
+                        </td>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="resultado" class="resultado">
+            <p></p>
+        </div>
+    </main>
+    <script src="javaScript.js"></script>
+</body>
+</html>
