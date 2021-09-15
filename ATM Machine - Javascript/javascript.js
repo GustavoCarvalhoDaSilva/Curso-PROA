@@ -55,7 +55,7 @@ function inicio(){
     function sacar(){
         senha()
         var saque = parseFloat(prompt("Digite o valor do saque: "));
-        if(isNaN(saque) || saque == ""){
+        if(isNaN(saque) || saque == "" || saque < 0){
             alert("Por favor, informe um número:");
             sacar()
         }else if(saldo < saque){
