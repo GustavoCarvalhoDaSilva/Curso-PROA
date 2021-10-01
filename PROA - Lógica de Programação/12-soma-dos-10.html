@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos 10 Números</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        #msg{
+            text-align: center;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soma dos 10 números</h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+            <button id="btn" class="btn" onclick="verificar()">Clique para calcular</button>
+        <div>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function verificar(){
+            var msg1 = document.getElementById('msg');
+            var n1 = Number(prompt('Digite o primeiro valor: '));
+            var n2 = Number(prompt('Digite o segundo valor: '));
+            var n3 = Number(prompt('Digite o terceiro valor: '));
+            var n4 = Number(prompt('Digite o quarto valor: '));
+            var n5 = Number(prompt('Digite o quinto valor: '));
+            var n6 = Number(prompt('Digite o sexto valor: '));
+            var n7 = Number(prompt('Digite o sétimo valor: '));
+            var n8 = Number(prompt('Digite o oitavo valor: '));
+            var n9 = Number(prompt('Digite o nono valor: '));
+            var n10 = Number(prompt('Digite o décimo valor: '));
+            if(n1 == "" || n2 == "" || n3 == "" ||n4 == "" || n5 == "" || n6 == "" || n6 == "" || n7 == "" || n8 == "" || n9 == "" || n10 == ""){
+                msg1.innerHTML = "DIGITE UM NÚMERO";
+            }else{
+                var resultado = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
+
+                msg1.innerHTML = `Média dos resultados = ${resultado}`;
+            }
+        }
+    </script>
+</body>
+</html>

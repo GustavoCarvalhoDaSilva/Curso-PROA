@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e menor</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        #msg{
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Qual é o maior ? </h1>
+    </header>
+    <main>
+        <div>
+            <button id="btn" class="btn" onclick="calcular()">Clique para descobrir</button>
+        </div>
+
+        <div>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function calcular(){
+            var msg = document.getElementById('msg')
+            var n1 = Number(prompt('Digite o primeiro número: '));
+            var n2 = Number(prompt('Digite o segundo número: '));
+            var n3 = Number(prompt('Digite o terceiro número: '));
+            if(n1 > n2 && n1 > n3){
+                msg.innerHTML = `O número maior é ${n1}: primeiro número`
+            }else if(n2 > n1 && n2 > n3){
+                msg.innerHTML = `O número maior é ${n2}: segundo número`
+            }else if(n3 > n1 && n3 > n2){
+                msg.innerHTML = `O número maior é ${n3}: terceiro número`
+            }
+        }
+    </script>
+</body>
+</html>

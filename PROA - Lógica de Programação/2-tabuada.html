@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        #msg{
+            text-align: center;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <main>
+        <div>
+            <button onclick="tabuada()" class="btn" id="btn">Clique para aparecer a tabuada</button>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function tabuada(){
+            var t = 0
+            var msg1 = document.getElementById('msg');
+            while(t < 10){
+                t++;
+                var r = t*5;
+                msg1.innerHTML += `<br> ${5} x ${t} = ${r}`
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+
+        <div>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+</body>
+</html> -->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor negativo ou positivo</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        #msg{
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Valor negativo ou postivo ? </h1>
+    </header>
+    <main>
+        <div class="botao">
+            <button onclick="verificar()" class="btn" id="btn">Clique para digitar um número</button>
+        </div>
+
+        <div>
+            <p id="msg" class="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+    <script>
+        function verificar(){
+            var n1 = prompt('Digite um número: ')
+            if(isNaN(n1) || n1 == ""){
+                alert('[EROO] - Digite apenas números')
+            }else if(n1 > 0){
+                var msg = document.getElementById('msg')
+                msg.innerHTML = `O número ${n1} é POSITIVO`
+            }else if(n1 == 0) {
+                var msg = document.getElementById('msg')
+                msg.innerHTML = `O número ${n1} é um número NEUTRO`
+            }else {
+                var msg = document.getElementById('msg')
+                msg.innerHTML = `O número ${n1} é NEGATIVO`
+            }
+        }
+    </script>
+</body>
+</html>

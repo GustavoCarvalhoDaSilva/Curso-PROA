@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O último</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        #msg1,
+        #msg2{
+            text-align: center;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>último exercício</h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+            <button id="btn" class="btn" onclick="verificar()">Clique para calcular</button>
+        <div>
+            <p id="msg1"></p>
+            <p id="msg2"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function verificar(){
+            var msg1 = document.getElementById('msg1');
+            var msg2 = document.getElementById('msg2');
+            var a;
+            var b;
+            var troca;
+            var a = Number(prompt('Digite um valor (númerico) da variável A'));
+            var b = Number(prompt('Digite um valor (númerico) da variável B'));
+            troca = a;
+            a = b;
+            b = troca;
+            msg1.innerHTML = `O novo valor de A é <mark style="background-color:blue; color:#fff">${a}</mark>`
+            msg2.innerHTML = `O novo valor de B é <mark style="background-color:purple; color:#fff">${b}</mark>`
+        }
+    </script>
+</body>
+</html>

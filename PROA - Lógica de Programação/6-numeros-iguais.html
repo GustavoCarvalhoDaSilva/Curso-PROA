@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números iguais</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        #msg{
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Números iguais</h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+            <button id="btn" class="btn" onclick="verificar()">Clique para calcular</button>
+        <div>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function verificar(){
+            var n1 = prompt('digite um valor: ');
+            var n2 = prompt('digite mais um valor: ');
+            var msg = document.getElementById('msg');
+            if(n1 == n2){
+                msg.innerHTML = `Os números digitados ${n1} e ${n2} são iguais`
+            }else if(n1 > n2){
+                msg.innerHTML = `Entre ${n1} e ${n2}, o maior é o ${n1}`
+            }else{
+                msg.innerHTML = `Entre ${n2} e ${n1}, o maior é o ${n2}`
+            }
+        }
+    </script>
+</body>
+</html>

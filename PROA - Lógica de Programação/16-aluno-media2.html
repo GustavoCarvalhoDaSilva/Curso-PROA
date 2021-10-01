@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando média dos alunos novamente</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        .ap,.re{
+            text-align: center;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Somando notas dos alunos 02</h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+            <button id="btn" class="btn" onclick="verificar()">Clique para calcular</button>
+        <div>
+            <p id="aprovado" class="ap"></p>
+            <p id="reprovado" class="re"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function verificar(){
+            var ap = document.getElementById('aprovado');
+            var re = document.getElementById('reprovado');
+            var nome = prompt('Digite seu nome: ')
+            var n1 = Number(prompt('Digite nota 1'));
+            var n2 = Number(prompt('Digite nota 2'));
+            var media;
+            media = (n1 + n2)/2
+            if(media >= 7){
+                ap.innerHTML = `${nome} <mark style="background-color:#5df076; color:green">APROVADO</mark>, sua média é ${media}`
+            }else{
+                re.innerHTML = `${nome} <mark style="background-color:#e61919; color:red">REPROVADO</mark>, sua média é ${media}`
+            }
+            
+        }
+    </script>
+</body>
+</html>

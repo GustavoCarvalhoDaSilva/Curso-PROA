@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de matemática</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        #msg{
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu da matemática</h1>
+    </header>
+    <main>
+        <div>
+    
+        </div>
+            <button id="btn" class="btn" onclick="calcular()">Clique para calcular</button>
+        <div>
+            <p id="msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function calcular(){
+            var msg1 = document.getElementById('msg');
+            var n1 = prompt('digite um número: ');
+            var n2 = prompt('digite outro número: ');
+            var resultado
+            tn1 = Number(n1);
+            tn2 = Number(n2);
+
+            var menu = Number.parseInt(prompt(`Digite apenas números
+            1) Subtrair 
+            2) Somar
+            3) Multiplicar
+            4) Dividir`))
+
+            switch (menu) {
+                case 1:
+                    resultado = tn1 - tn2;
+                    msg1.innerHTML = `SEU RESULTADO: ${tn1} - ${tn2} = ${resultado}`;
+                    break;
+                case 2:
+                    resultado = tn1 + tn2;
+                    msg1.innerHTML = `SEU RESULTADO: ${tn1} + ${tn2} = ${resultado}`;
+                    break;
+                case 3:
+                    resultado = tn1 * tn2;
+                    msg1.innerHTML = `SEU RESULTADO: ${tn1} x ${tn2} = ${resultado}`;
+                    break;
+                case 4:
+                    resultado = tn1 / tn2;
+                    msg1.innerHTML = `SEU RESULTADO: ${tn1} % ${tn2} = ${resultado}`;
+                    break;
+                default:
+                    msg1.innerHTML = '[ERRO] - ESCOLHA APENAS 4 OPÇÕES - tente novamente'
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

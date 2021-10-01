@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma do maior número</title>
+    <style>
+        body{
+            background: rgb(70, 142, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+        header{
+            text-align: center;
+            color: #fff;
+        }
+        main{
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+        }
+        #msg,
+        #msg1{
+            text-align: center;
+        }
+        .btn{
+            padding: 10px;
+            width: 50%;
+            margin: 0 25%;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soma dos maiores número</h1>
+    </header>
+    <main>
+        <div>
+            <button id="btn" class="btn" onclick="calcular()">Clique para descobrir</button>
+        </div>
+
+        <div>
+            <p id="msg"></p>
+            <p id="msg1"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Nomegusta</p>
+    </footer>
+
+    <script>
+        function calcular(){
+            var msg = document.getElementById('msg');
+            var msg1 = document.getElementById('msg1');
+            var msg = document.getElementById('msg')
+            var n1 = Number(prompt('Digite o primeiro número: '));
+            var n2 = Number(prompt('Digite o segundo número: '));
+            var n3 = Number(prompt('Digite o terceiro número: '));
+            var soma;
+            if(n1 > n2 && n2 > n3){
+                var soma = n1 + n2
+                msg.innerHTML = `Os dois maiores números são o ${n1} e ${n2}`
+                msg1.innerHTML = `A soma dos dois é ${soma}`
+            }else if(n2 > n1 && n1 > n3){
+                var soma = n2 + n1
+                msg.innerHTML = `Os dois maiores números são o ${n2} e ${n1}`
+                msg1.innerHTML = `A soma dos dois é ${soma}`
+            }else if(n3 > n1 && n1 > n2){
+                var soma = n3 + n1
+                msg.innerHTML = `Os dois maiores números são o ${n3} e ${n1}`
+                msg1.innerHTML = `A soma dos dois é ${soma}`
+            }else if(n3 > n2 && n2 > n1){
+                var soma = n3 + n2
+                msg.innerHTML = `Os dois maiores números são o ${n3} e ${n2}`
+                msg1.innerHTML = `A soma dos dois é ${soma}`
+            }
+        }
+    </script>
+</body>
+</html>
