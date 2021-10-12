@@ -1,2 +1,10 @@
-# projeto_equipe_3
-Uma página pessoal
+# projeto do curso proa
+
+Equipe 3
+
+<div>
+  <div>
+    <img src="" width="200px" height="200px">
+  </div>
+</div>
+
