@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    font-family: 'Press Start 2P';
+}
+.controles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+h1, p{
+    text-align: center;
+}
+.tabela{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+iframe{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.carrinho{
+    animation: carrinho 5s ease infinite;
+}
+@keyframes carrinho{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1700px);
+        opacity: 0;
+    }
+}
+.controle-antigo{
+    animation: controle 0.2s alternate infinite;
+}
+@keyframes controle{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
